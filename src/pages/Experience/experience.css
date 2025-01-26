@@ -1,0 +1,48 @@
+.section_page{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.experience_window{
+    width: 90%;
+    max-width: 60rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--white);
+    border: 7px double var(--black);
+    position: relative;
+}
+
+.job_title{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.job_time{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.stack{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stack li {
+    font-size: 1.4rem;
+}
+@media (min-width: 1200px) {
+    .experience_window{
+        margin: 2rem;
+    }
+}

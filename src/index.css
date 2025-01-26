@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Chicago';
+  src: url('/src/assets/fonts/ChicagoFLF.ttf');
+}
+
+:root{
+
+  --black: #000;
+  --white: #fff;
+
+  --font: 'Chicago', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+html,
+body{
+  min-height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 2rem;
+  font-family: var(--font);
+  cursor: url('./assets/cursor/cursor.cur'), auto;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+button{
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: .4rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.btn_window{
+  background-color: var(--black);
+  border: 2px solid var(--white);
+  color: var(--white);
+}

@@ -1,0 +1,41 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_btn {
+  padding: 0.8rem;
+  border: none;
+  color: var(--black);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 2rem;
+  background-color: white;
+  border: 2px solid var(--black);
+  border-radius: 2px;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  z-index: 12;
+}
+
+/* Estilos de cada ítem del dropdown */
+.dropdown-item {
+  padding: .8rem 1.2rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.dropdown-item:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+

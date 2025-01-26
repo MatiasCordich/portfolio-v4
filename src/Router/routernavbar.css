@@ -1,0 +1,12 @@
+.window_navbar{
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    background-color: var(--white);
+}
+
+.window_link{
+    font-size: 1.5rem;
+}

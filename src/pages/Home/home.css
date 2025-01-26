@@ -1,0 +1,27 @@
+.section_page{
+    display: flex;
+    flex-direction: column;
+}
+
+.home_window{
+    width: 90%;
+    max-width: 90rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--white);
+    margin: 2rem auto;
+    border: 7px double var(--black);
+}
+
+.about_text{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 1200px) {
+    .home_window{
+        margin: 2rem;
+    }
+}
