@@ -6,7 +6,7 @@ import "./routernavbar.css";
 const RouterNav = () => {
   return (
     <nav className="window_navbar">
-      <Link className="window_link" to="/home">
+      <Link className="window_link" to="/">
         Inicio
       </Link>
       <Link className="window_link" to="/experience">
