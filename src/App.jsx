@@ -12,20 +12,20 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <div className="box">
-      <Navbar />
-      <div className="desktop">
-        <Links />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Window />}>
-              <Route path="/" element={<Home />} />
-              <Route path="experience" element={<Experience />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </div>
-      <Footer/>
+    <Navbar />
+    <div className="desktop">
+      <Links />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Window />}>
+            <Route index element={<Home />} />
+            <Route path="experience" element={<Experience />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
+    <Footer />
+  </div>
   );
 };
 
