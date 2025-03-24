@@ -4,6 +4,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
+  height: 75rem;
 }
 
 .window {
@@ -58,6 +59,13 @@
   overflow-y: auto; 
   padding: .5rem; 
   scrollbar-color: var(--black) var(--white); 
+}
+
+.profile-icon{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  position: absolute;
 }
 
 .minimizada{
