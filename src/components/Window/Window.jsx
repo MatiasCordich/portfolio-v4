@@ -9,7 +9,6 @@ const Window = () => {
     transform: "rotate(-90deg)",
   };
 
-  // Cargar estado desde localStorage o usar valores predeterminados
   const [visible, setVisible] = useState(() => {
     return localStorage.getItem("ventanaVisible") === "false" ? false : true;
   });
@@ -18,7 +17,6 @@ const Window = () => {
     return localStorage.getItem("ventanaMinimizada") === "true" ? true : false;
   });
 
-  // Guardar en localStorage cada vez que cambie el estado
   useEffect(() => {
     localStorage.setItem("ventanaVisible", visible);
   }, [visible]);
@@ -29,7 +27,7 @@ const Window = () => {
 
   return (
     <div className="window-container">
-      {/* Mostrar la ventana solo si está visible */}
+      
       {visible && (
         <div className={`window ${minimizada ? "minimizada" : ""}`}>
           <header className="window_header">
@@ -61,14 +59,16 @@ const Window = () => {
         </div>
       )}
 
-      {/* Mostrar el icono de restaurar solo si la ventana está cerrada */}
-      {!visible && (
-        <button className="icono-restaurar" onClick={() => setVisible(true)}>
-          <SquareIcon size={30} strokeWidth={0.25} radius={1} />
+     
+      {!visible || minimizada ? (
+        <button className="profile-icon" onClick={() => setVisible(true)}
+        disabled={minimizada}>
+          <UserIcon size={50} color="" strokeWidth={0.25} radius={1} />
+          <p>Matias</p>
+          <p>Cordich</p>
         </button>
-      )}
+      ) : null}
 
-      {/* Botón de restaurar solo si está minimizada y visible */}
       {minimizada && visible && (
         <button className="window-min" onClick={() => setMinimizada(false)}>
           <UserIcon size={30} color="" strokeWidth={0.25} radius={1} />
